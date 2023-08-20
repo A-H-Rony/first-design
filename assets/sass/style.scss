@@ -1,0 +1,176 @@
+/* global css start*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul li {
+  list-style-type: none;
+}
+
+ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: red;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col_1 {
+  width: 8.33%;
+}
+
+.col_2 {
+  width: 16.66%;
+}
+
+.col_3 {
+  width: 25%;
+}
+
+.col_4 {
+  width: 33.33%;
+}
+
+.col_5 {
+  width: 41.65%;
+}
+
+.col_6 {
+  width: 50%;
+}
+
+.col_7 {
+  width: 58.33%;
+}
+
+.col_8 {
+  width: 66.66%;
+}
+
+.col_9 {
+  width: 75%;
+}
+
+.col_10 {
+  width: 83.33%;
+}
+
+.col_11 {
+  width: 91.66%;
+}
+
+.col_12 {
+  width: 100%;
+}
+.img_fluid{
+  width: 100%;
+}
+
+/* global css end*/
+
+header {
+    .container {
+      .top_section {
+              background: #028c8d;
+              padding: 20px;
+      .row {
+        .top_section_left {
+          .logo {
+            img {
+              width: 200px;
+            }
+          }
+        }
+        .top_section_right {
+          .social_icon {
+            ul {
+              display: flex;
+              justify-content: end;
+              margin-bottom: 10px;
+              li {
+                width: 20px;
+                height: 20px;
+                background: #fff;
+                margin: 0 10px;
+                text-align: center;
+                a {
+                  color: #028c8d !important;
+                  font-size: 12px;
+                  &:hover{
+                    color: red;
+                  }
+                }
+              }
+            }
+          }
+          .search_box {
+            text-align: end;
+            input[type="search"] {
+              padding: 3px;
+              outline: none;
+            }
+            button {
+              margin-left: -5px;
+              padding: 3px;
+              background-color: #C6C4C6;
+              border: 1px solid #C6C4C6;
+            }
+          }
+        }
+      }
+    }
+    nav{
+      ul {
+          background-color: #FFFB4D;
+          padding: 5px;
+        li {
+            display: inline-block;
+            padding: 0 5px;
+            &::after{
+              content: '|';
+              padding-left: 10px;
+              &::after:last-child{
+                content: '';
+              }
+            }
+            a {
+                color: black !important;
+                font-weight: bold;
+                padding: 10px;
+                &:hover{
+                  background: #028c8d !important;
+                }
+              }
+          }
+        }
+    }
+  }
+}
+.banner{
+  .img_fluid{
+    height: 300px;
+    vertical-align: middle;
+  }
+}
+.banner_content{
+  .row {
+      margin: 20px 0;
+    .col_8{
+      padding: 10px;
+      .catgory{
+        h4{
+          background: red;
+        }
+      }
+    }
+  }
+}
